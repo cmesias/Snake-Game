@@ -1,5 +1,7 @@
 // JavaScript Snake example
-// Author Carl Mesias (Original Jan Bodnar)
+// Author: Carl Mesias 
+// Original Author: Jan Bodnar
+// http://zetcode.com/javascript/snake/
 
 var canvas;
 var ctx;
@@ -66,8 +68,9 @@ function loadImages() {
 // Create snake object, at the start it has three joints
 function createSnake() {
 
-    dots = 3;
+    dots = 13;
 
+    // Place the tail to the right of the head
     for (var z = 0; z < dots; z++) {
         x[z] = 50 - z * 10;
         y[z] = 50;
